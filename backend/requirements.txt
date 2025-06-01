@@ -1,0 +1,15 @@
+fastapi>=0.68.0,<0.69.0
+uvicorn>=0.15.0,<0.16.0
+python-dotenv==1.0.1
+PyYAML==6.0.2
+numpy==1.23.5
+pandas==1.5.3
+pydantic>=1.8.0,<2.0.0
+openai==0.28.1
+openpyxl==3.1.2
+requests==2.31.0
+python-multipart==0.0.6
+sqlalchemy==2.0.27
+pyodbc==5.2.0
+psycopg2-binary==2.9.9
+starlette>=0.14.2,<0.15.0
