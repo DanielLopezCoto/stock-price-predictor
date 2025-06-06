@@ -46,7 +46,7 @@ Este proyecto tiene como objetivo predecir el precio del índice SP500 mediante 
 ## 🌱 Flujo de Trabajo: GitFlow
 Se sigue la estrategia GitFlow para gestionar el trabajo colaborativo.
 
-![Git flow diagram](/PERSONAL/sp500-price-predictor/info/git-flow.png)
+![Git flow diagram](./info/git-flow.png)
 
 **Ramas principales**
 
@@ -65,4 +65,8 @@ Se sigue la estrategia GitFlow para gestionar el trabajo colaborativo.
 - Crea ramas feature/ desde develop.
 - Aplica buenas prácticas de codificación.
 - Cubre tu código con tests.
+- Añade etiquetas a tus commits:
+  - `[ADD]` para nuevas funcionalidades.
+  - `[EDIT]` para modificaciones o mejoras en funcionalidades existentes.
+  - `[FIX]` para corrección de errores o bugs.
 - Realiza Pull Requests descriptivos.
