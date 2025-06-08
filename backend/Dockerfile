@@ -8,4 +8,5 @@ COPY ./requirements.txt ./
 RUN pip install -r requirements.txt
 COPY ./ /backend
 
-CMD ["python", "main.py"]
+# CMD ["python", "main.py"]
+CMD ["tail", "-f", "/dev/null"]
