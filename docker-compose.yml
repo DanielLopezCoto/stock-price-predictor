@@ -29,32 +29,26 @@ services:
       - frontend_network
       - backend_network
 
-  frontend_recommender:
-    build:
-      context: ./frontend
-      # dockerfile: "Dockerfile.build"
-    image: frontend:v0.0.1
-    container_name: frontend_container
-    command: ["tail", "-f", "/dev/null"]
-    # command: ["npm", "run", "dev"]
-    # ports:
-    #   - ${PORT_VITE_FRONTEND}:${PORT_VITE_FRONTEND}
-    restart: always
-    environment:
-      IP_FRONTEND: ${IP_FRONTEND}
-      PORT_FRONTEND: ${PORT_FRONTEND}
-      
-      # VITE_API_URL: "http://${IP_NGINX}:${PORT_NGINX}/api"
-      # PORT_VITE_FRONTEND: ${PORT_VITE_FRONTEND}
-      
-      # VITE_API_URL: "http://${IP_NGINX}:${PORT_NGINX}/api"
-      # VITE_FRONTEND_PORT: ${PORT_VITE_FRONTEND}
+  # frontend_recommender:
+  #   build:
+  #     context: ./frontend
+  #     # dockerfile: "Dockerfile.build"
+  #   image: frontend:v0.0.1
+  #   container_name: frontend_container
+  #   command: ["tail", "-f", "/dev/null"]
+  #   # command: ["npm", "run", "dev"]
+  #   # ports:
+  #   #   - ${PORT_VITE_FRONTEND}:${PORT_VITE_FRONTEND}
+  #   restart: always
+  #   environment:
+  #     IP_FRONTEND: ${IP_FRONTEND}
+  #     PORT_FRONTEND: ${PORT_FRONTEND}
 
-    depends_on:
-      - backend
-    networks:
-      - frontend_network
-      # - backend_network
+  #   depends_on:
+  #     - backend
+  #   networks:
+  #     - frontend_network
+  #     # - backend_network
 
   backend:
     build:
@@ -91,7 +85,7 @@ services:
 
   database:
     build:
-      context: ./bbdd
+      context: ./database
     image: pgvector:v0.0.1
     container_name: pgvector_container
     environment:  
