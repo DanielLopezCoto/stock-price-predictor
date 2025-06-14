@@ -1,12 +1,12 @@
-# 📈 SP500 Stock Market Prediction Platform
+# 📈 Stock Market Prediction Platform
 
-Este proyecto tiene como objetivo predecir el precio del índice SP500 mediante un pipeline completo basado en web scraping, análisis de sentimientos con LLMs y modelos de series temporales.
+Este proyecto tiene como objetivo predecir el precio de las acciones de NVIDIA (u otro stock) mediante un pipeline completo basado en web scraping, análisis de sentimientos con LLMs y modelos de series temporales.
 
 1. Scrapea la web para extraer información financiera y noticias relevantes del mercado.
 2. Guarda la información en una base de datos PostgreSQL.
 3. Vectoriza el contenido textual y lo analiza mediante un modelo de lenguaje (LLM).
 4. Clasifica y analiza el sentimiento de las noticias extraídas.
-5. Combina el histórico de precios con los resultados del análisis de sentimiento para generar features y entrenar modelos de predicción del precio del SP500.
+5. Combina el histórico de precios con los resultados del análisis de sentimiento para generar features y entrenar modelos de predicción del precio de NVIDIA.
 
 ```bash
 .
